@@ -6,8 +6,267 @@
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Mar 2016 20:03:04 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 11 Mar 2016 20:08:36 +0900</lastBuildDate>
     <atom:link href="http://ged1959.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>toku</title>
+      <link>http://ged1959.github.io/blog/post/toku/</link>
+      <pubDate>Fri, 11 Mar 2016 20:08:36 +0900</pubDate>
+      
+      <guid>http://ged1959.github.io/blog/post/toku/</guid>
+      <description>&lt;pre&gt;&lt;code&gt;
+ged@DESKTOP-K1VCLO9 MINGW64 ~
+$ cd work
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work
+$ hugo new site blog
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work
+$ cd blog
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog
+$ mkdir themes
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog
+$ ls
+archetypes/  config.toml  content/  data/  layouts/  static/  themes/
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog
+$ hugo new post/hoge.med
+C:\Users\ged\work\blog\content\post\hoge.med created
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog
+$ hugo new post/hoge.med
+ERROR: 2016/03/11 C:\Users\ged\work\blog\content\post\hoge.med already exists
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog
+$
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog
+$ hugo new post/hoge.md
+C:\Users\ged\work\blog\content\post\hoge.md created
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog
+$ hugo server -t angels-ladder -D
+FATAL: 2016/03/11 Unable to find theme Directory: C:\Users\ged\work\blog\themes\angels-ladder
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog
+$ cd themes/
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog/themes
+$ ls
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog/themes
+$ git clone https://github.com/tanksuzuki/angels-ladder
+Cloning into &#39;angels-ladder&#39;...
+remote: Counting objects: 254, done.
+remote: TReceioving objectstal 2:  53% (135/54 (de254), lta 0), re464.used 0 (delta 0),0 pack-reused 254
+Receiving objects: 100% (254/254), 479.49 KiB | 134.00 KiB/s, done.
+Resolving deltas: 100% (142/142), done.
+Checking connectivity... done.
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog/themes
+$ cd ..
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog
+$ hugo server -t angels-ladder -D
+1 of 1 draft rendered
+0 future content
+1 pages created
+1 paginator pages created
+0 tags created
+0 categories created
+in 7 ms
+Watching for changes in C:\Users\ged\work\blog/{data,content,layouts,static,themes}
+Serving pages from memory
+Web Server is available at http://localhost:1313/blog/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog
+$ hugo -t angels-ladder -D
+1 of 1 draft rendered
+0 future content
+1 pages created
+1 paginator pages created
+0 tags created
+0 categories created
+in 42 ms
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog
+$ ls
+archetypes/  config.toml  content/  data/  layouts/  public/  static/  themes/
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog
+$ cd public/
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog/public
+$ git init
+Initialized empty Git repository in C:/Users/ged/Work/blog/public/.git/
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog/public (master)
+$ git remote add origin https://github.com/ged1959/blog.git
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog/public (master)
+$ git checkout -b gh-pages
+Switched to a new branch &#39;gh-pages&#39;
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog/public (gh-pages)
+$ ls
+404.html  css/  images/  index.html  index.xml  js/  page/  post/  sitemap.xml
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog/public (gh-pages)
+$ git add .
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog/public (gh-pages)
+$ git commit -m &amp;quot;1st&amp;quot;
+[gh-pages (root-commit) f0474d6] 1st
+ 16 files changed, 1197 insertions(+)
+ create mode 100644 404.html
+ create mode 100644 css/custom.css
+ create mode 100644 css/highlight_monokai.css
+ create mode 100644 css/responsive.css
+ create mode 100644 css/sanitize.css
+ create mode 100644 css/theme.css
+ create mode 100644 css/theme.less
+ create mode 100644 images/profile.png
+ create mode 100644 index.html
+ create mode 100644 index.xml
+ create mode 100644 js/highlight.pack.js
+ create mode 100644 page/1/index.html
+ create mode 100644 post/hoge/index.html
+ create mode 100644 post/index.html
+ create mode 100644 post/index.xml
+ create mode 100644 sitemap.xml
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog/public (gh-pages)
+$ git push -u origin gh-pages
+Counting objects: 24, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (24/24), 34.52 KiB | 0 bytes/s, done.
+Total 24 (delta 4), reused 0 (delta 0)
+To https://github.com/ged1959/blog.git
+ * [new branch]      gh-pages -&amp;gt; gh-pages
+Branch gh-pages set up to track remote branch gh-pages from origin.
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog/public (gh-pages)
+$ cd ..
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog
+$ ls
+archetypes/  config.toml  content/  data/  layouts/  public/  static/  themes/
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog
+$ hugo new post/gege.md
+C:\Users\ged\work\blog\content\post\gege.md created
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog
+$ hugo -t angels-ladder -D
+2 of 2 drafts rendered
+0 future content
+2 pages created
+1 paginator pages created
+0 tags created
+0 categories created
+in 44 ms
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog
+$ cd public/
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog/public (gh-pages)
+$ git status
+On branch gh-pages
+Your branch is up-to-date with &#39;origin/gh-pages&#39;.
+Changes not staged for commit:
+  (use &amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot; to update what will be committed)
+  (use &amp;quot;git checkout -- &amp;lt;file&amp;gt;...&amp;quot; to discard changes in working directory)
+
+        modified:   index.html
+        modified:   index.xml
+        modified:   post/hoge/index.html
+        modified:   post/index.html
+        modified:   post/index.xml
+        modified:   sitemap.xml
+
+Untracked files:
+  (use &amp;quot;git add &amp;lt;file&amp;gt;...&amp;quot; to include in what will be committed)
+
+        post/gege/
+
+no changes added to commit (use &amp;quot;git add&amp;quot; and/or &amp;quot;git commit -a&amp;quot;)
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog/public (gh-pages)
+$ git add .
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog/public (gh-pages)
+$ git commit -m &amp;quot;2nd&amp;quot;
+[gh-pages 67e91d0] 2nd
+ 7 files changed, 181 insertions(+), 3 deletions(-)
+ create mode 100644 post/gege/index.html
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog/public (gh-pages)
+$ git push -u origin gh-pages
+Counting objects: 12, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (12/12), 1.34 KiB | 0 bytes/s, done.
+Total 12 (delta 8), reused 0 (delta 0)
+To https://github.com/ged1959/blog.git
+   f0474d6..67e91d0  gh-pages -&amp;gt; gh-pages
+Branch gh-pages set up to track remote branch gh-pages from origin.
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog/public (gh-pages)
+$ cd ,,
+bash: cd: ,,: No such file or directory
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog/public (gh-pages)
+$ cd ..
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog
+$ hugo server -t angels-ladder -D
+2 of 2 drafts rendered
+0 future content
+2 pages created
+1 paginator pages created
+0 tags created
+0 categories created
+in 9 ms
+Watching for changes in C:\Users\ged\work\blog/{data,content,layouts,static,themes}
+Serving pages from memory
+Web Server is available at http://localhost:1313/blog/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog
+$ hugo -t angels-ladder -D
+2 of 2 drafts rendered
+0 future content
+2 pages created
+1 paginator pages created
+0 tags created
+0 categories created
+in 18 ms
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog
+$ cd public/
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog/public (gh-pages)
+$ ls
+404.html  css/  images/  index.html  index.xml  js/  page/  post/  sitemap.xml
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog/public (gh-pages)
+$ git status
+On branch gh-pages
+Your branch is up-to-date with &#39;origin/gh-pages&#39;.
+nothing to commit, working directory clean
+
+ged@DESKTOP-K1VCLO9 MINGW64 ~/work/blog/public (gh-pages)
+$
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>gege</title>
