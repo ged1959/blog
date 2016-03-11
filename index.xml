@@ -6,8 +6,23 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Mar 2016 19:54:53 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 11 Mar 2016 20:03:04 +0900</lastBuildDate>
     <atom:link href="http://ged1959.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>gege</title>
+      <link>http://ged1959.github.io/blog/post/gege/</link>
+      <pubDate>Fri, 11 Mar 2016 20:03:04 +0900</pubDate>
+      
+      <guid>http://ged1959.github.io/blog/post/gege/</guid>
+      <description>
+
+&lt;p&gt;いろんなことが起きる。
+これはびっくり。&lt;/p&gt;
+
+&lt;h2 id=&#34;特ダネですぜ:98fda03e4db1427738828003fc0962d8&#34;&gt;特ダネですぜ。&lt;/h2&gt;
+</description>
+    </item>
     
     <item>
       <title>hoge</title>
